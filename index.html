@@ -7,6 +7,11 @@
 <script type="text/javascript" src="lib/angular/angular.min.js"></script>
 <script type="text/javascript" src="js/controllers.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<style>
+	*{
+		border-radius: 0 !important;
+	}	
+</style>
 </head>
 
 <body >
@@ -17,8 +22,22 @@
 	
 	<div ng-app="myApp" ng-controller="MyController">
 		<div ng-repeat="item in artists">
-		<h1>{{item.realName}}</h1>
-		<img src="images/{{item.images}}.jpg" alt="">
+		<div class="container-fluid">
+			<div class="row">
+			<div class="list-group">
+				<div class="col-sm-4 col-md-2 list-group-item">
+				<img class="img-responsive img-rounded center-block" ng-src="images/{{item.images}}.jpg" alt="Photo of {{item.realName}}">	
+				</div><!-- col -->
+				<div class="col-sm-8 col-md-10 list-group-item">
+				<h2>{{item.realName}}</h2>
+				<h4>{{item.filmName}}</h4>
+				
+				</div>
+				</div><!-- list group -->
+				
+			</div><!-- row -->	
+		</div><!-- container -->
+		
 		
 		</div>
 		

@@ -40,6 +40,7 @@ $scope.artists = [
 	},
 	{
 		'realName':'Benicio Del Toro',
+		'filmName':'Striker',
 		'discription':'Benicio Monserrate Rafael del Toro Sánchez (born February 19, 1967) is a Puerto Rican actor. He won an Academy Award, BAFTA Award, Golden Globe Award, and Screen Actors Guild Award for his portrayal of Javier Rodríguez in the film Traffic (2000).',
 		'images':'Benicio_Del_Toro'
 	},
