@@ -16,8 +16,12 @@
 	
 	
 	<div ng-app="myApp" ng-controller="MyController">
-		<h1>{{author.name}}</h1>
-		<p>{{author.title + ', ' + author.company}}</p>
+		<div ng-repeat="item in artists">
+		<h1>{{item.realName}}</h1>
+		<img src="images/{{item.images}}.jpg" alt="">
+		
+		</div>
+		
 		
 		
 	</div>
