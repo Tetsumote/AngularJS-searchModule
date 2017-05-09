@@ -19,7 +19,7 @@
 		<div ng-repeat="item in artists | filter:query | orderBy:artistOrder:direction">
 		<div class="container-fluid">
 			<div class="row">
-			<div class="list-group">
+			<div class="list-group" ng-show="query">
 			<a href="#/details/{{artists.indexOf(item)}}">
 				<div class="col-sm-4 col-md-2 list-group-item">
 				

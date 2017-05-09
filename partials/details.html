@@ -1,1 +1,9 @@
-
+<section>
+	<div ng-model="artists">
+		<h1>{{artists[whichItem].realName}}</h1>
+		<h3>{{artists[whichItem].filmName}}</h3>
+		<img src="images/{{artists[whichItem].images}}.jpg" alt="Photo of {{artists[whichItem].realName}}">
+		<p>{{artists[whichItem].discription}}</p>
+	</div>
+	<a href="/#list">Back to search</a>
+</section>
