@@ -20,14 +20,17 @@
 		<div class="container-fluid">
 			<div class="row">
 			<div class="list-group">
+			<a href="#/details/{{artists.indexOf(item)}}">
 				<div class="col-sm-4 col-md-2 list-group-item">
+				
 				<img class="img-responsive img-rounded center-block" ng-src="images/{{item.images}}.jpg" alt="Photo of {{item.realName}}">	
 				</div><!-- col -->
 				<div class="col-sm-8 col-md-10 list-group-item">
 				<h2>{{item.realName}}</h2>
 				<h4>{{item.filmName}}</h4>
 				
-				</div>
+				</div><!-- list-group -->
+				</a>
 				</div><!-- list group -->
 				
 			</div><!-- row -->	
