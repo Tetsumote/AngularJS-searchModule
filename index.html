@@ -21,7 +21,12 @@
 	
 	
 	<div ng-app="myApp" ng-controller="MyController">
-		<div ng-repeat="item in artists">
+	<div class="col-sm-12 list-group">
+		<h1>Artist Directory</h1>
+		<labe>Search:</labe>
+		<input type="text" ng-model="query" class="form-control list-group-item" placeholder="Search for artists" autofocus>
+	</div><!-- col -->
+		<div ng-repeat="item in artists | filter:query">
 		<div class="container-fluid">
 			<div class="row">
 			<div class="list-group">
