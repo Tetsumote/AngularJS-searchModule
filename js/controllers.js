@@ -1,10 +1,8 @@
-var myApp = angular.module('myApp',[]);
+var artistControllers = angular.module('artistControllers',[]);
 
-myApp.controller('MyController',function MyController($scope){
-	
-
-	
-$scope.artists = [
+artistControllers.controller('ListController',function MyController($scope){
+	$scope.artistOrder = 'name';
+	$scope.artists = [
 	{
 		'realName':'Daisy Ridley',
 		'filmName':'Rey',
@@ -60,7 +58,6 @@ $scope.artists = [
 	
 ];
 
-	
 
 
 	

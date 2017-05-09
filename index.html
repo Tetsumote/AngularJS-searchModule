@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AngularJS search module</title>
 <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 <script type="text/javascript" src="js/controllers.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <style>
@@ -20,7 +23,9 @@
 	<div class="col col-sm-6 col-sm-offset-3">
 	
 	
-	<div ng-app="myApp" ng-controller="MyController">
+	<div ng-app="myApp" ng-view>
+	<script>
+		/*
 	<div class="col-sm-12 list-group">
 		<h1>Artist Directory</h1>
 		<label>Search:</label>
@@ -56,11 +61,12 @@
 		</div><!-- container -->
 		
 		
-		</div>
+		</div><!-- ng-repeat -->
+		*/
+		</script>
 		
 		
-		
-	</div>
+	</div><!-- aplication -->
 	
 	
 	

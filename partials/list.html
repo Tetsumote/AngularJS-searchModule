@@ -1,0 +1,44 @@
+<section class="artistpage">
+<div class="col-sm-12 list-group">
+		<h1>Artist Directory</h1>
+		<label>Search:</label>
+		<input type="text" ng-model="query" class="form-control list-group-item" placeholder="Search for artists" autofocus>
+		<label for="select">by:
+			<select class="form-control" ng-model="artistOrder">
+				<option value="realName">Name</option>
+				<option value="filmName">Film name</option>
+			</select>
+			</label>&nbsp;&nbsp;&nbsp;&nbsp;
+			<label class="radio-inline">
+  <input type="radio" ng-model="direction" name="direction" checked> ascending
+</label>
+<label class="radio-inline">
+  <input type="radio" ng-model="direction" name="direction"  value="reverse" > descending
+</label>
+	</div><!-- col -->
+		<div ng-repeat="item in artists | filter:query | orderBy:artistOrder:direction">
+		<div class="container-fluid">
+			<div class="row">
+			<div class="list-group">
+				<div class="col-sm-4 col-md-2 list-group-item">
+				<img class="img-responsive img-rounded center-block" ng-src="images/{{item.images}}.jpg" alt="Photo of {{item.realName}}">	
+				</div><!-- col -->
+				<div class="col-sm-8 col-md-10 list-group-item">
+				<h2>{{item.realName}}</h2>
+				<h4>{{item.filmName}}</h4>
+				
+				</div>
+				</div><!-- list group -->
+				
+			</div><!-- row -->	
+		</div><!-- container -->
+		
+		
+		</div>	
+	
+	
+	
+	
+	
+	
+</section>
